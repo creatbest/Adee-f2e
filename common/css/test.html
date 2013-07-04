@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>常用 CSS</title>
+<style>
+html, body, h2, div, p, hr, pre, ul, li, a { margin: 0; padding: 0; }
+ul { list-style: none; }
+a { font-size: 13px; color: #9b59b6; text-decoration: none; }
+a:hover { color: #fff; background-color: #9b59b6; }
+a:visited { color: #9b59b6; }
+body { background-color: #fff; }
+section { display: block; margin: 0; padding: 0; }
+hr { height: 1px; overflow: hidden; border: none; background-color: #e0b6f1; }
+pre { width: 920px; margin: 20px 0; padding: 7px; border: 1px solid #dadada; border-radius: 3px; overflow: auto; font: 400 14px/1.5 "Inconsolata", "Menlo" monospace; color: #4c4c4c; background-color: #f9f9f7; }
+pre code { color: #4c4c4c; border: none; background-color: none; padding: auto; }
+.wrap { padding: 30px; }
+.wrap h2 { padding: 10px 0 20px 10px; font-weight: 400; color: #333; text-shadow: 0 0 1px #999; font-family: '\5FAE\8F6F\96C5\9ED1'; }
+.menu { position: fixed; _position: absolute; right: 50px; top: 30px; z-index: 100; padding: 10px; width: 200px; border: 1px solid #e0b6f1; background-color: #f9f9f7; border-radius: 3px; 
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f7', endColorstr='#f3f1f1'); /* IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9f9f7), to(#f3f1f1));
+  background: -moz-linear-gradient(top, #f9f9f7, #f3f1f1);
+  background: linear-gradient(top, #f9f9f7, #f3f1f1);
+  box-shadow: 0 0 6px rgba(155, 89, 182, 0.6);
+}
+.menu li { line-height: 30px; }
+.menu a { display: block; margin-bottom: 1px; width: 100%; height: 30px; text-indent: 10px; }
+.menu .current a { color: #fff; background-color: #9b59b6; }
+.item { width: 240px; height: 120px; color: #fff; font-size: 14px; line-height: 50px; text-align: center; background-color: #9b59b6; }
+.text { font-size: 16px; font-family: '\5FAE\8F6F\96C5\9ED1'; color: #9b59b6; }
+.footer { padding: 20px 0 40px 20px; }
+
+/****************************/
+
+.item-1 { 
+  border:1px solid #fff;
+  
+  -webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+        border-radius: 10px;
+
+  background-clip: padding-box;
+}
+.item-1-1 {   
+  border-top-left-radius: 10px;
+  border-top-right-radius: 20px; 
+  border-bottom-right-radius: 30px; 
+  border-bottom-left-radius: 0;
+}
+
+.item-2 {
+  -webkit-box-shadow: 2px 4px 10px #000;
+   -moz-box-shadow: 2px 4px 10px #000;
+        box-shadow: 2px 4px 10px #000;
+}
+
+.item-3 { position: relative; }
+.item-3-1 { 
+  position: absolute; right: -50px; top: 10px; width: 100px; height: 100px; background-color: #000; 
+
+  opacity: 0.8;
+  filter: alpha(opacity=80); /* IE */
+}
+
+.item-4 {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c88fdf', endColorstr='#9b59b6'); /* IE */
+  background: -webkit-gradient(linear, left top, left bottom, from(#c88fdf), to(#9b59b6));
+  background: -moz-linear-gradient(top, #c88fdf, #9b59b6);
+  background: linear-gradient(top, #c88fdf, #9b59b6);
+}
+
+.item-5 {
+  -webkit-transform: rotate(7.5deg);
+     -moz-transform: rotate(7.5deg);
+      -ms-transform: rotate(7.5deg);
+          transform: rotate(7.5deg);
+  /*filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";*/
+}
+
+.item-6 {
+  -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.item-7 {
+  -webkit-perspective: 300px;
+     -moz-perspective: 300px;
+      -ms-perspective: 300px;
+          perspective: 300px;
+  -webkit-transform: rotateY(180deg);  -webkit-transform-style: preserve-3d;
+     -moz-transform: rotateY(180deg);     -moz-transform-style: preserve-3d;
+      -ms-transform: rotateY(180deg);      -ms-transform-style: preserve-3d;
+          transform: rotateY(180deg);          transform-style: preserve-3d;
+}
+
+.text-1 {
+  text-shadow: 2px 4px 10px #000;
+}
+
+@font-face {
+  font-family: 'Kaushan Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kaushan Script'), local('KaushanScript-Regular'), url(http://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+
+.text-2 {
+  font-family: 'Kaushan Script';
+}
+</style>
+<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body>
+
+<section id="J-menu" class="menu">
+  <ul>
+    <li><a href="#J-wrap-1">圆角</a></li>
+    <li><a href="#J-wrap-2">盒状阴影</a></li>
+    <li><a href="#J-wrap-3">文本阴影</a></li>
+    <li><a href="#J-wrap-4">透明</a></li>
+    <li><a href="#J-wrap-5">渐变</a></li>
+    <li><a href="#J-wrap-6">旋转</a></li>
+    <li><a href="#J-wrap-7">缩放</a></li>
+    <li><a href="#J-wrap-8">反转</a></li>
+  </ul>
+</section>
+<!--/ .menu -->
+
+<section class="wrap" id="J-wrap-1">
+  <h2>圆角</h2>
+
+  <div class="item item-1"></div>
+  <div class="highlight">
+<pre>
+-webkit-border-radius: 10px;
+   -moz-border-radius: 10px;
+        border-radius: 10px;
+</pre>
+  </div>
+
+  <div class="item item-1-1"></div>
+    <div class="highlight">
+<pre>
+/* 标准写法 */
+border-top-left-radius: 10px;
+border-top-right-radius: 20px; 
+border-bottom-right-radius: 30px; 
+border-bottom-left-radius: 0;
+
+
+/* Chrome and Safari 老版本支持 */ 
+-webkit-border-top-left-radius: 10px;
+-webkit-border-top-right-radius: 20px; 
+-webkit-border-bottom-right-radius: 30px; 
+-webkit-border-bottom-left-radius: 0;
+
+/* Firefox 老版本支持 */
+-moz-border-radius-topleft: 10px;
+-moz-border-radius-topright: 20px;
+-moz-border-radius-bottomright: 30px;
+-moz-border-radius-bottomleft: 0;
+</pre>
+  </div>
+
+</section>
+<!--/ [圆角] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-2">
+  <h2>盒状阴影</h2>
+
+  <div class="item item-2"></div>
+
+  <div class="highlight">
+<pre>
+-webkit-box-shadow: 2px 4px 10px #000;
+   -moz-box-shadow: 2px 4px 10px #000;
+        box-shadow: 2px 4px 10px #000;
+</pre>
+<pre>
+/* JavaScript */
+object.style.boxShadow = '2px 4px 10px #000'
+</pre>
+  </div>
+
+</section>
+<!--/ [盒状阴影] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-3">
+  <h2>文本阴影</h2>
+
+  <div class="text text-1">文本内容！</div>
+
+  <div class="highlight">
+<pre>
+-webkit-text-shadow: 2px 4px 10px #000;
+   -moz-text-shadow: 2px 4px 10px #000;
+        text-shadow: 2px 4px 10px #000;
+</pre>
+  </div>
+
+</section>
+<!--/ [文本阴影] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-4">
+  <h2>透明</h2>
+
+  <div class="item item-3">
+    <div class="item-3-1"></div>
+  </div>
+
+  <div class="highlight">
+<pre>
+opacity: 0.8;
+filter: alpha(opacity=80); /* IE */
+</pre>
+  </div>
+
+</section>
+<!--/ [透明] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-5">
+  <h2>渐变</h2>
+
+  <div class="item item-4"></div>
+
+  <div class="highlight">
+<pre>
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#c88fdf', endColorstr='#9b59b6'); /* IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#c88fdf), to(#9b59b6));
+background: -moz-linear-gradient(top, #c88fdf, #9b59b6);
+background: linear-gradient(top, #c88fdf, #9b59b6);
+</pre>
+  </div>
+
+</section>
+<!--/ [透明] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-6">
+  <h2>旋转</h2>
+
+  <div class="item item-5"></div>
+
+  <div class="highlight">
+<pre>
+-webkit-transform: rotate(7.5deg);
+   -moz-transform: rotate(7.5deg);
+    -ms-transform: rotate(7.5deg);
+        transform: rotate(7.5deg);
+
+/* 下面其中的x只能取值为1，2，3，0，分别表示顺时针选择90度、180度、270度和360度。 */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=x);
+-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=x)";
+</pre>
+  </div>
+
+</section>
+<!--/ [旋转] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-7">
+  <h2>缩放</h2>
+
+  <div class="item">缩放前</div>
+  <div class="item item-6">缩放后</div>
+
+  <div class="highlight">
+<pre>
+-webkit-transform: scale(0.8);
+   -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+        transform: scale(0.8);
+</pre>
+  </div>
+
+</section>
+<!--/ [缩放] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-8">
+  <h2>反转</h2>
+
+  <div class="item item-7">反转后</div>
+
+  <div class="highlight">
+<pre>
+-webkit-perspective: 300px;
+   -moz-perspective: 300px;
+    -ms-perspective: 300px;
+        perspective: 300px;
+-webkit-transform: rotateY(180deg);  -webkit-transform-style: preserve-3d;
+   -moz-transform: rotateY(180deg);     -moz-transform-style: preserve-3d;
+    -ms-transform: rotateY(180deg);      -ms-transform-style: preserve-3d;
+        transform: rotateY(180deg);          transform-style: preserve-3d;
+</pre>
+  </div>
+
+</section>
+<!--/ [反转] -->
+
+<hr>
+
+<section class="wrap" id="J-wrap-9">
+  <h2>服务器端字体</h2>
+
+  <div class="text text-2">Web Fonts!</div>
+
+  <div class="highlight">
+<pre>
+@font-face {
+  font-family: 'MyFont';
+  src: url('myfont.eot'); /* IE6+ */
+  src: local('myfont.ttf'),
+  url('myfont.woff') format('woff'), /* FF3.6 */
+  url('myfont.ttf') format('truetype'); /* FF3.5+, Saf3+,Chrome,Opera10+ */
+}
+</pre>
+  </div>
+</section>
+<!--/ [服务器端字体] -->
+
+<hr>
+
+<div class="footer">
+<p>扩展参考：</p>
+<a href="http://css3please.com/">http://css3please.com/</a> <br>
+<a href="http://www.ruanyifeng.com/blog/2010/03/cross-browser_css3_features.html">http://www.ruanyifeng.com/blog/2010/03/cross-browser_css3_features.html</a>
+</div>
+
+<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.9.1.min.js"></script>
+<script src="assets/jquery.scrollTo.js"></script>
+<script src="assets/jquery.nav.js"></script>
+<script>
+$('#J-menu').onePageNav();
+</script>
+</body>
+</html>
