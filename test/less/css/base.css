@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+/*
+ * @Name: base
+ * @Overview: reset & global
+ * @Company: http://www.CreatBest.com
+ * @Author: mittya
+ */
+
+/** Reset **/
+a, blockquote, button, body, code, dd, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, hr, html, i, input, iframe, img, label, li, legend, object, ol, p, pre, small, span, strong, sub, sup, table, tbody, td, th, thead, tr, ul { margin:0; padding:0; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark { display:block; margin:0; padding:0; }
+audio, canvas, video { display:inline-block; *display:inline; *zoom:1; }
+mark { color:#000; background:#ff0; }
+html { color:#000; background-color:#fff; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+body, button, input, select, textarea { font:12px/1.5 Arial, '\5b8b\4f53', Tahoma, sans-serif; }
+button, input, select, textarea { font-size:100%; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+b, strong { font-weight:800; }
+address, cite, dfn, em, var { font-style:normal; }
+code, kbd, pre, samp { font-family:Tahoma, Arial; }
+small { font-size:12px; }
+ul, ol, li { list-style:none; }
+a { color:#000; text-decoration:none; cursor:pointer; }
+a:link { color:#000; text-decoration:none; }
+a:visited { color:#000; text-decoration:none; }
+a:hover { color:#000; text-decoration:underline; }
+a:active { color:#000; text-decoration:none; }
+sup, sub { position:relative; font-size:75%; line-height:0; vertical-align:baseline; }
+sup { top:-0.5em; }
+sub { bottom:-0.25em; }
+legend { color:#000; /*for IE6*/ }
+input, button, textarea, select, optgroup, option { font-family:inherit; font-size:inherit; font-weight:inherit; }
+input, button, textarea, select { font-size:100%\9; }
+pre { white-space:pre-wrap; word-wrap:break-word; }
+table { border-collapse:collapse; border-spacing:0; }
+th { text-align:inherit; /*IE bug fixed: th is not inherit text-align*/ }
+fieldset, img { border:0; }
+iframe { display:block; }
+del { text-decoration:line-through; }
+/* float */
+.fn-left, .fn-right { display:inline; /*for IE6 double margin*/ }
+.fn-left { float:left; }
+.fn-right { float:right; }
+/* clear */
+.fn-clearfix:after { display:block; font-size:0; content:'\0020'; clear:both; height:0; }
+.fn-clearfix { zoom:1; /*for IE6 IE7*/ }
+.fn-clear { visibility:hidden; clear:both; }
+/* chrome-zh font size */
+.fn-font-chrome { -webkit-text-size-adjust:none; }
+
+/** golbal **/

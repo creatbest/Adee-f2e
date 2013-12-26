@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Qatrix</title>
+</head>
+
+<body>
+<div id="box" class="box2">Qatrix!</div>
+<button onclick="selectElement()">点击</button>
+
+<script src="qatrix-1.0.2.min.js"></script>
+<script>
+function selectElement() {
+	var box = $('box');
+	alert(box.innerHTML);
+}
+</script>
+</body>
+</html>

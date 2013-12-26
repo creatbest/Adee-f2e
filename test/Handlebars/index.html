@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Handlebars</title>
+</head>
+<body>
+
+<div id="list">
+</div>
+
+<script src="http://upcdn.b0.upaiyun.com/libs/jquery/jquery-1.10.2.min.js"></script>
+<script src="handlebars.js"></script>
+
+<script id="entry-template" type="text/x-handlebars-template">
+<ul>
+  {{#myInfo}}
+    <li>
+      <p>{{name}}</p>
+      <img src="{{avatar}}" alt="">
+    </li>
+  {{/myInfo}}
+</ul>
+</script>
+
+<script>
+$.ajax({
+  dataType: "jsonp",
+  url: 'https://api.douban.com/v2/user/ahbei',
+  success: loadData
+});
+
+function loadData(data) {
+  var source = $('#entry-template').html();
+  var template = Handlebars.compile(source);
+  var context = data;
+
+  $('#list').html(template({myInfo:context}));
+}
+</script>
+</body>
+</html>
