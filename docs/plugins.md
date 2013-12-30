@@ -29,6 +29,8 @@
 
 [SuperSlide](http://www.superslide2.com/)
 
+[视差切换](https://github.com/jacksbox/jquery.fractionslider)
+
 
 ## 图表
 
