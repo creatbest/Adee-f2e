@@ -39,6 +39,8 @@
 
 [背景 subtlepatterns](http://subtlepatterns.com/)
 
+[SVG](http://www.svgeneration.com/)
+
 [在线图标制作](http://preloaders.net)
 
 [占位图](http://placehold.it/)
