@@ -1,1 +1,0 @@
-[RequireJS](http://requirejs.org/)
