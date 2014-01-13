@@ -1,8 +1,8 @@
 ## jQuery 常用插件
 
-[slidesjs](http://slidesjs.com/)  
+[slidesjs](http://slidesjs.com/)
 
-[switchable](http://switchable.mrzhang.me/)  
+[switchable](http://switchable.mrzhang.me/)
 
 [AGILE](http://www.agilecarousel.com/)
 
@@ -15,7 +15,7 @@
 
 [jQuery-Rotate 图片旋转](https://code.google.com/p/jqueryrotate/)
 
-[jQuery-Placeholder](https://github.com/mathiasbynens/jquery-placeholder)  
+[jQuery-Placeholder](https://github.com/mathiasbynens/jquery-placeholder)
 
 [图片交错效果](http://stephband.info/jparallax/)  
 
@@ -45,14 +45,16 @@
 
 [在线图标制作](http://preloaders.net)
 
-[占位图](http://placehold.it/)
+[占位图 JS](https://github.com/imsky/holder)
 
-[浏览器图标](https://github.com/paulirish/browser-logos#readme)  
+[占位图 在线](http://placehold.it/)
+
+[浏览器图标](https://github.com/paulirish/browser-logos#readme)
 
 
 ## Other
 
-[雨滴效果 rainyday.js](http://maroslaw.github.io/rainyday.js/)  
+[雨滴效果 rainyday.js](http://maroslaw.github.io/rainyday.js/)
 
 [加载进度 spin.js](http://fgnass.github.io/spin.js/)
 
