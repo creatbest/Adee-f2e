@@ -17,7 +17,7 @@
         .ui-footer { margin: 0 auto; width: 974px; }  
 
 
-+ 颜色值统一小写，实际代码不要出现 `red / blue` 等词，有些词可缩写，可以采用 [rgba](http://blog.imbolo.com/css3-rgba-advanced-usage/) 方式书写颜色值
++ 颜色值统一小写，实际代码不要出现 `red / blue` 等词，有些词可缩写，可以采用 [RGBA](http://baike.baidu.com/view/3731103.htm) 方式书写颜色值
 
         body { color:rgb(255, 255, 255); background:#fff; }
 
