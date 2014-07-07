@@ -1,10 +1,10 @@
 ## 页面规范（HTML）
 
-说明：**[*](###)** 为扩展阅读
+说明：[*](###) 为扩展阅读
 
 ### 基础
 
-+ 页面规范使用 `<!DOCTYPE html>` **[*](http://w3school.com.cn/html5/tag_doctype.asp)**
++ 页面规范使用 `<!DOCTYPE html>` [*](http://w3school.com.cn/html5/tag_doctype.asp)
 + 统一编码 `<meta charset="UTF-8">`
 + 标题 title，首页写法 `网站全名`； 二级页面写法 `栏目名称 - 网站名称`，注意有空格；特殊三级页写法，例如新闻详细页，可直接写新闻标题
 + 描述 description 和 关键词 keywords，根据具体内容填写，有助于SEO [*](http://baike.baidu.com/view/1047.htm)
