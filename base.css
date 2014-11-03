@@ -1,19 +1,26 @@
 ﻿@charset "utf-8";
 
 /*
- * Overview: Reset & Function & Global
+ * Overview: Reset & Function & Common
  * Site: http://f2e.adee.cn
  * Author: mittya
  */
 
 /** Reset **/
-a, blockquote, button, body, code, dd, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, hr, html, i, input, iframe, img, label, li, legend, object, ol, p, pre, small, span, strong, sub, sup, table, tbody, td, th, thead, tr, ul { margin: 0; padding: 0; }
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark { display: block; margin: 0; padding: 0; }
+a, blockquote, button, body, code, dd, div, dl, dt, em, form, h1, h2, h3, h4, h5, h6, hr, html, i, input, iframe, img,
+ label, li, legend, object, ol, p, pre, small, span, strong, sub, sup, table, tbody, td, th, thead, tr, ul {
+  margin: 0; padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark {
+  display: block; margin: 0; padding: 0;
+}
 audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 time { display: inline; }
 mark { color: #333; background: #ff0; }
 html { color: #333; background-color: #fff; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
-body, button, input, select, textarea { font: 12px/1.5 Tahoma, Arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', sans-serif; }
+body, button, input, select, textarea {
+  font: 12px/1.5 Tahoma, Arial, 'Hiragino Sans GB', '\5FAE\8F6F\96C5\9ED1', '\5B8B\4F53', sans-serif;
+}
 input, select, textarea { font-size: 100%; }
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 500; }
 b, strong { font-weight: 700; }
@@ -44,6 +51,7 @@ del { text-decoration: line-through; }
 .fn-clear:before,
 .fn-clear:after { content: " "; display: table; }
 .fn-clear:after { clear: both; }
+.fn-clear { *zoom: 1; }
 .fn-left, .fn-right { display: inline; }
 .fn-left { float: left; }
 .fn-right { float: right; }
